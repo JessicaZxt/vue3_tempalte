@@ -1,7 +1,9 @@
 <template>
-  <router-view></router-view>
+  <h1>我是App</h1>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+// import { reactive, ref } from 'vue';
+</script>
 
-<style lang="scss" scoped></style>
+<style scoped lang="scss"></style>
