@@ -86,9 +86,9 @@ const jumpToHome = () => {
     }
   }
   .center {
-    flex: 2;
+    flex: 1.3;
     background: url(../../images/dataScreen-header-center-bg.png) no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     text-align: center;
     line-height: 90px;
     font-size: 32px;

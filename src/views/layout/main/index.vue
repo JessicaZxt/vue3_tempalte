@@ -27,6 +27,9 @@ watch(
 <style lang="scss" scoped>
 .main_content {
   padding: 20px;
+  margin: 20px;
+  box-shadow: 0px 0px 3px 1px #ccc;
+  height: calc(100vh - 130px);
 }
 .fade-enter-from {
   opacity: 0;
