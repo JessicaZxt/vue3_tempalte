@@ -22,7 +22,7 @@
   </el-dialog>
 </template>
 <script setup lang="ts">
-import { reactive, defineProps, computed, defineEmits } from 'vue'
+import { reactive, defineProps, computed, defineEmits } from "vue";
 const props = defineProps({
   visible: {
     type: Boolean,
@@ -30,28 +30,28 @@ const props = defineProps({
   },
   type: {
     type: String,
-    default: 'add',
+    default: "add",
   },
-})
+});
 
-const emits = defineEmits(['update:visible'])
+const emits = defineEmits(["update:visible"]);
 const show = computed({
   get() {
-    return props.visible
+    return props.visible;
   },
   set(val) {
-    emits('update:visible', val)
+    emits("update:visible", val);
   },
-})
+});
 
 interface Form {
-  name: string
-  logo: string
+  name: string;
+  logo: string;
 }
 const form = reactive<Form>({
-  name: '',
-  logo: '',
-})
+  name: "",
+  logo: "",
+});
 </script>
 
 <style lang="scss" scoped></style>
